@@ -1,6 +1,9 @@
 package com.charlie.rx
 
-import io.reactivex.*
+import io.reactivex.Flowable
+import io.reactivex.Observable
+import io.reactivex.ObservableOnSubscribe
+import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 import org.reactivestreams.Subscriber
 import org.reactivestreams.Subscription
@@ -42,7 +45,7 @@ fun main() {
         println(it)
     }
 
-    Flowable.range(0, 10).subscribe(object : FlowableSubscriber   <Int> {
+    Flowable.range(0, 10).subscribe(object : Subscriber<Int> {
         var s: Subscription? = null
         override fun onNext(t: Int?) {
             println("onNext $t")
