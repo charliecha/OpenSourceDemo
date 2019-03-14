@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'org.charliecha.plugin.dellog'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -33,3 +35,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+dellogExtension{
+    sourceDir = '/src'
+}
+
