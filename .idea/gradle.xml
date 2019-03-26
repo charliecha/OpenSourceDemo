@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/gradleplugin" />
             <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/pic" />
             <option value="$PROJECT_DIR$/rx" />
           </set>
         </option>

@@ -5,6 +5,8 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
+import com.bumptech.glide.Glide
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
+        val imageView: ImageView = findViewById(R.id.image);
+        Glide.with(this).load("https://ws3.sinaimg.cn/large/006tKfTcly1g18irb9tvxj313e0os40f.jpg").into(imageView);
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

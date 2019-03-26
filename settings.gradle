@@ -1,1 +1,1 @@
-include ':app', ':network', ':rx', ':gradleplugin'
+include ':app', ':network', ':rx', ':gradleplugin', ':pic'
