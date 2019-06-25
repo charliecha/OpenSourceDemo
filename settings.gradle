@@ -1,1 +1,1 @@
-include ':app', ':network', ':rx', ':pic'
+include ':app', ':network', ':rx', ':pic', ':kotlin'
